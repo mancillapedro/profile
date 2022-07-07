@@ -1,24 +1,22 @@
 # abort on errors
 set -e
 
-
+git push origin main
+# cambiar de rama
+gco gh-pages
 
 # build
+git pull origin main
 yarn build
-
-# navigation to output directory
-# cd dist
 cp dist/index.html dist/404.html
+
 # git instrucction
-
-# git init 
 git add -A
-git commit -m "deploy"
+git commit --amend --no-edit
 
+# despliegue
+git subtree push --prefix dist origin gh-pages
 
-# Para desplegar nuestra pagina en gh-pages  https://<USERNAME>.github.io/<REPO>
-# !importante ! reemplazar por su propio git la siguiente linea donde corresponda
+# volver a la rama principal
+gco main
 
-git push -f origin gh-pages
-
-# cd -
