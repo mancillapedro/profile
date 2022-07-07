@@ -1,60 +1,45 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
+      <v-parallax
+        dark
+        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+        :height="heightParallax"
+        :style="{ 'margin-bottom': pixelMarginParallaxPixel}"
+      />
     <v-main>
-      <HelloWorld/>
+      <v-container>
+        <card-component />
+        <works-component v-if="false" />
+      </v-container>
     </v-main>
+    <footer-component v-if="false" />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import CardComponent from "./components/CardComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
+import WorksComponent from "./components/WorksComponent.vue";
 
 export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
+  name: "App",
+  components: { FooterComponent, CardComponent, WorksComponent },
   data: () => ({
-    //
+    heightParallax: 400,
+    marginParallax: -250,
   }),
+  computed: {
+    pixelMarginParallaxPixel() {
+      return `${this.marginParallax}px`;
+    },
+  },
+  methods: {
+    handleScroll() {
+      this.marginParallax = window.scrollY * -0.75 - 250;
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
 };
 </script>
