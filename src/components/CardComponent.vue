@@ -4,7 +4,7 @@
       <v-card class="rounded-xl pt-0" elevation="24">
         <v-avatar class="mt-n16" color="primary" size="160">
           <img
-            src="https://mancillapedro.github.io/profile/img-perfil.gif"
+            src="@/assets/img-perfil.gif"
             alt="Pedro Mancilla"
           />
         </v-avatar>
