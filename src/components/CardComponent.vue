@@ -3,10 +3,7 @@
     <v-col class="text-center" cols="12">
       <v-card class="rounded-xl pt-0" elevation="24">
         <v-avatar class="mt-n16" color="primary" size="160">
-          <img
-            src="@/assets/img-perfil.gif"
-            alt="Pedro Mancilla"
-          />
+          <img src="@/assets/img-perfil.gif" alt="Pedro Mancilla" />
         </v-avatar>
         <v-card-title
           class="pb-4"
