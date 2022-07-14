@@ -1,11 +1,11 @@
 <template>
   <v-app>
-      <v-parallax
-        dark
-        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-        :height="heightParallax"
-        :style="{ 'margin-bottom': pixelMarginParallaxPixel}"
-      />
+    <v-parallax
+      dark
+      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+      :height="heightParallax"
+      :style="{ 'margin-bottom': pixelMarginParallaxPixel }"
+    />
     <v-main>
       <v-container>
         <card-component />
@@ -43,3 +43,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.icons_rrss {
+  filter: grayscale(100%);
+  &:hover {
+    filter: none;
+  }
+  & > * {
+    height: 1.5rem;
+  }
+}
+</style>

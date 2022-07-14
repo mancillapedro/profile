@@ -14,14 +14,9 @@
         <v-card-subtitle
           v-html="`<h3 class='font-weight-light'>Desarrollador web</h4>`"
         />
+        <redes-sociales-component/>
         <v-card-text>
           <v-row justify="center">
-            <v-col cols="11">
-              <v-btn v-for="icon in icons" :key="icon" class="mx-md-4" icon>
-                <v-icon size="24px" v-text="icon" />
-              </v-btn>
-              <v-divider class="my-8" />
-            </v-col>
             <v-col cols="11" md="7" class="pb-8">
               <p class="text-body-1 font-weight-light">
                 Me he desempeñado en diferentes áreas en la cuales realice
@@ -45,10 +40,10 @@
 </template>
 
 <script>
+import RedesSocialesComponent from './RedesSocialesComponent.vue';
+
 export default {
+  components: { RedesSocialesComponent },
   name: "CardComponent",
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
 };
 </script>
