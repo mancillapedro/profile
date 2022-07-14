@@ -1,7 +1,9 @@
 # abort on errors
 set -e
 
+# sube todo a git 
 git push origin main
+
 # cambiar de rama
 gco gh-pages
 
