@@ -9,7 +9,7 @@
           icon
           tile
           small
-          href="#"
+          :href="icon.url"
           target="_blank"
           v-html="icon.svg"
           :style="icon.style"
@@ -35,34 +35,34 @@ export default {
   data: () => ({
     icons: [
       {
-        svg: siCodewars.svg,
-        style: { fill: `#${siCodewars.hex}` },
-        url: "www.ww",
-      },
-      {
-        svg: siHackerrank.svg,
-        style: { fill: `#${siHackerrank.hex}` },
-        url: "www.ww",
-      },
-      {
         svg: siGithub.svg,
         style: { fill: `#${siGithub.hex}` },
-        url: "www.ww",
+        url: "https://github.com/mancillapedro",
       },
       {
         svg: siLinkedin.svg,
         style: { fill: `#${siLinkedin.hex}` },
-        url: "www.ww",
+        url: "https://www.linkedin.com/in/pedro-mancilla-929990196",
+      },
+      {
+        svg: siCodewars.svg,
+        style: { fill: `#${siCodewars.hex}` },
+        url: "https://www.codewars.com/users/mancillapedro",
+      },
+      {
+        svg: siHackerrank.svg,
+        style: { fill: `#${siHackerrank.hex}` },
+        url: "https://www.hackerrank.com/pedropmancillac",
       },
       {
         svg: siSololearn.svg,
         style: { fill: `#${siSololearn.hex}` },
-        url: "www.ww",
+        url: "https://www.sololearn.com/profile/9299702",
       },
       {
         svg: siFreecodecamp.svg,
         style: { fill: `#${siFreecodecamp.hex}` },
-        url: "www.ww",
+        url: "https://www.freecodecamp.org/mancillapedro",
       },
     ],
   }),
