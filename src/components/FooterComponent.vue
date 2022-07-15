@@ -1,5 +1,5 @@
 <template>
-  <v-footer id="FooterComponent" dark padless>
+  <v-footer id="FooterComponent" padless>
     <v-card flat tile class="indigo lighten-1 white--text text-center">
       <v-card-title>
         <v-row justify="center">
@@ -9,16 +9,7 @@
               v-text="`Get connected with us on social networks!`"
             />
           </v-col>
-          <v-col cols="11" md="5">
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4 white--text"
-              icon
-            >
-              <v-icon size="24px" v-text="icon" />
-            </v-btn>
-          </v-col>
+          <v-col cols="11" md="5"> </v-col>
         </v-row>
       </v-card-title>
       <v-card-text class="white--text pt-0">
@@ -42,17 +33,5 @@
 <script>
 export default {
   name: "FooterComponent",
-  // props: {},
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
-  // computed: {},
-  // methods: {},
-  // watch: {},
-  // components: {},
-  // mixins: [],
-  // filters: {},
-  // -- Lifecycle Methods
-  // -- End Lifecycle Methods
-};
+  };
 </script>
