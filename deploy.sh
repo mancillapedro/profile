@@ -5,10 +5,12 @@ set -e
 git push origin main
 
 # cambiar de rama
-gco gh-pages
+git checkout gh-pages
+
+# traer cambios 
+git pull origin main
 
 # build
-git pull origin main
 yarn build
 cp dist/index.html dist/404.html
 
@@ -20,5 +22,5 @@ git commit --amend --no-edit
 git subtree push --prefix dist origin gh-pages
 
 # volver a la rama principal
-gco main
+git checkout main
 
