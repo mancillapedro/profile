@@ -9,6 +9,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "@typeform/embed": "^1.36.0",
     "core-js": "^3.8.3",
     "simple-icons": "^7.4.0",
     "vue": "^2.6.14",
