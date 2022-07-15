@@ -1,6 +1,6 @@
 <template>
   <div id="RedesSocialesComponent">
-    <v-hover v-for="(icon, i) in icons" :key="i">
+    <v-hover v-for="({ url, svg, style }, i) in icons" :key="i">
       <template v-slot:default="{ hover }">
         <v-btn
           class="mx-md-2 icons_rrss"
@@ -9,10 +9,10 @@
           icon
           tile
           small
-          :href="icon.url"
+          :href="url"
           target="_blank"
-          v-html="icon.svg"
-          :style="icon.style"
+          v-html="svg"
+          :style="style"
         />
       </template>
     </v-hover>
