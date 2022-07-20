@@ -4,11 +4,9 @@
 
 <script>
 import { createSlider } from "@typeform/embed";
-import "@typeform/embed/build/css/slider.css";
 
 export default {
   name: "ContactComponent",
-
   data: () => ({
     slider: createSlider("uE4aLeJi", {
       slider: "uE4aLeJi",
@@ -20,3 +18,7 @@ export default {
   }),
 };
 </script>
+
+<style>
+@import "@typeform/embed/build/css/slider.css";
+</style>

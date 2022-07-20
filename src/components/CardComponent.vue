@@ -1,7 +1,7 @@
 <template>
-  <v-row id="CardComponent" justify="center">
+  <v-row id="CardComponent" justify="center" class="mb-16">
     <v-col class="text-center" cols="12">
-      <v-card class="rounded-xl pt-0" elevation="24">
+      <v-card class="rounded-xl pt-0" elevation="20">
         <v-avatar class="mt-n16" color="primary" size="160">
           <img src="@/assets/img-perfil.gif" alt="Pedro Mancilla" />
         </v-avatar>
