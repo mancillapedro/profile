@@ -8,7 +8,7 @@ git push origin main
 git checkout gh-pages
 
 # traer cambios 
-git pull origin main
+git pull --force origin main
 
 # build
 yarn build

@@ -42,7 +42,7 @@ export default {
       {
         svg: siLinkedin.svg,
         style: { fill: `#${siLinkedin.hex}` },
-        url: "https://www.linkedin.com/in/pedro-mancilla-929990196",
+        url: "https://www.linkedin.com/in/mancillapedro",
       },
       {
         svg: siCodewars.svg,
