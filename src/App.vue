@@ -2,7 +2,7 @@
   <v-app>
     <v-parallax
       dark
-      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+      src="@/assets/material.jpg"
       :height="heightParallax"
       :style="{ 'margin-bottom': pixelMarginParallaxPixel }"
     />
@@ -10,7 +10,7 @@
       <v-container>
         <card-component />
         <works-component />
-        <contact-component />
+        <contact-component v-if="false" />
       </v-container>
     </v-main>
     <footer-component v-if="false" />
@@ -32,8 +32,9 @@ export default {
     ContactComponent,
   },
   data: () => ({
-    heightParallax: 400,
-    marginParallax: -250,
+    heightParallax: 0,
+    marginParallax: 0,
+    marginInicial: 0,
   }),
   computed: {
     pixelMarginParallaxPixel() {
@@ -42,11 +43,14 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.marginParallax = window.scrollY * -0.75 - 250;
+      this.marginParallax = window.scrollY * -0.75 + this.marginInicial;
     },
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
+    this.heightParallax = document.documentElement.clientHeight * 0.66;
+    this.marginInicial = (this.heightParallax - 150) * -1;
+    this.marginParallax = this.marginInicial;
   },
 };
 </script>

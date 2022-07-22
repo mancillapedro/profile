@@ -26,12 +26,11 @@ import {
   siGithub,
   siLinkedin,
   siSololearn,
-  siFreecodecamp,
+  // siFreecodecamp,
 } from "simple-icons/icons";
 
 export default {
   name: "RedesSocialesComponent",
-
   data: () => ({
     icons: [
       {
@@ -45,25 +44,25 @@ export default {
         url: "https://www.linkedin.com/in/mancillapedro",
       },
       {
-        svg: siCodewars.svg,
-        style: { fill: `#${siCodewars.hex}` },
-        url: "https://www.codewars.com/users/mancillapedro",
-      },
-      {
         svg: siHackerrank.svg,
         style: { fill: `#${siHackerrank.hex}` },
         url: "https://www.hackerrank.com/pedropmancillac",
+      },
+      {
+        svg: siCodewars.svg,
+        style: { fill: `#${siCodewars.hex}` },
+        url: "https://www.codewars.com/users/mancillapedro",
       },
       {
         svg: siSololearn.svg,
         style: { fill: `#${siSololearn.hex}` },
         url: "https://www.sololearn.com/profile/9299702",
       },
-      {
-        svg: siFreecodecamp.svg,
-        style: { fill: `#${siFreecodecamp.hex}` },
-        url: "https://www.freecodecamp.org/mancillapedro",
-      },
+      // {
+      //   svg: siFreecodecamp.svg,
+      //   style: { fill: `#${siFreecodecamp.hex}` },
+      //   url: "https://www.freecodecamp.org/mancillapedro",
+      // },
     ],
   }),
 };

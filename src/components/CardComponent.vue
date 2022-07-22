@@ -6,18 +6,19 @@
           <img src="@/assets/img-perfil.gif" alt="Pedro Mancilla" />
         </v-avatar>
         <v-card-title
-          class="pb-4"
-          v-html="
-            `<h1 class='mx-auto text-h5 text-md-h4 mt-4'>Pedro Mancilla</h1>`
-          "
+          class="pb-4 justify-center text-h4"
+          v-text="`Pedro Mancilla`"
+          tag="h1"
         />
         <v-card-subtitle
-          v-html="`<h3 class='font-weight-light'>Desarrollador web</h4>`"
+          class="font-weight-light text-subtitle-1"
+          tag="h3"
+          v-text="`Desarrollador web`"
         />
-        <redes-sociales-component/>
+        <redes-sociales-component />
         <v-card-text>
           <v-row justify="center">
-            <v-col cols="11" md="7" class="pb-8">
+            <v-col cols="11" sm="9" md="7" class="pb-8">
               <p class="text-body-1 font-weight-light">
                 Me he desempeñado en diferentes áreas en la cuales realice
                 funciones reponedor, ayudante cocina- construcción y reparación
@@ -40,7 +41,7 @@
 </template>
 
 <script>
-import RedesSocialesComponent from './RedesSocialesComponent.vue';
+import RedesSocialesComponent from "./RedesSocialesComponent.vue";
 
 export default {
   components: { RedesSocialesComponent },
