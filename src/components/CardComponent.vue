@@ -5,20 +5,17 @@
         <v-avatar class="mt-n16" color="primary" size="160">
           <img src="@/assets/img-perfil.gif" alt="Pedro Mancilla" />
         </v-avatar>
-        <v-card-title
-          class="pb-4 justify-center text-h4"
-          v-text="`Pedro Mancilla`"
-          tag="h1"
-        />
+        <v-card-title class="pb-4 text-h4 justify-center" v-text="`Pedro Mancilla`" tag="h1" />
         <v-card-subtitle
-          class="font-weight-light text-subtitle-1"
+          class="font-weight-light text-subtitle-1 pb-2"
           tag="h3"
-          v-text="`Desarrollador web`"
+          v-text="`Desarrollador web | Vue.js | RoR`"
         />
         <redes-sociales-component />
         <v-card-text>
           <v-row justify="center">
             <v-col cols="11" sm="9" md="7" class="pb-8">
+              <v-divider class="mb-4"/>
               <p class="text-body-1 font-weight-light">
                 Me he desempeñado en diferentes áreas en la cuales realice
                 funciones reponedor, ayudante cocina- construcción y reparación

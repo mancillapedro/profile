@@ -54,15 +54,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.icons_rrss {
-  filter: grayscale(100%);
-  &:hover {
-    filter: none;
-  }
-  & > * {
-    height: 1.5rem;
-  }
-}
-</style>

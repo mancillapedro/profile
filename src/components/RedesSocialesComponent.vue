@@ -3,7 +3,7 @@
     <v-hover v-for="({ url, svg, style }, i) in icons" :key="i">
       <template v-slot:default="{ hover }">
         <v-btn
-          class="mx-md-2 icons_rrss"
+          class="mx-sm-1 icons_rrss"
           :elevation="hover ? 6 : 0"
           fab
           icon
@@ -67,3 +67,15 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss" scope>
+.icons_rrss {
+  filter: grayscale(100%);
+  &:hover {
+    filter: none;
+  }
+  & > * {
+    height: 1.5rem;
+  }
+}
+</style>
