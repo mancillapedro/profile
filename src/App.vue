@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <contact-component />
     <v-parallax
       dark
       src="@/assets/material.jpg"
@@ -10,7 +11,6 @@
       <v-container>
         <card-component />
         <works-component />
-        <contact-component />
       </v-container>
     </v-main>
     <footer-component v-if="false" />

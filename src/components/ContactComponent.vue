@@ -1,5 +1,11 @@
 <template>
-  <div></div>
+      <v-alert
+      outlined
+      type="warning"
+      class="ma-0 text-center"
+    
+      v-text="`Pagina en construcción`"
+    />
 </template>
 
 <script>
@@ -11,7 +17,7 @@ export default {
     createSidetab("uE4aLeJi", {
       slider: "uE4aLeJi",
       medium: "ContactProfile",
-      buttonText: "Contantame",
+      buttonText: "Conéctate conmigo",
       buttonColor: "#2979FF",
       customIcon: `<i class="v-icon notranslate mdi mdi-message-text"></i>`,
     });

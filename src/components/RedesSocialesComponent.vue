@@ -46,7 +46,7 @@ export default {
       {
         svg: siHackerrank.svg,
         style: { fill: `#${siHackerrank.hex}` },
-        url: "https://www.hackerrank.com/pedropmancillac",
+        url: "https://www.hackerrank.com/mancillapedro",
       },
       {
         svg: siCodewars.svg,
