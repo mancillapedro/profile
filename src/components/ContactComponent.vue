@@ -1,24 +1,24 @@
 <template>
-  <button @click="slider.toggle()">¡Pruébame!</button>
+  <div></div>
 </template>
 
 <script>
-import { createSlider } from "@typeform/embed";
+import { createSidetab } from "@typeform/embed";
 
 export default {
   name: "ContactComponent",
-  data: () => ({
-    slider: createSlider("uE4aLeJi", {
+  created() {
+    createSidetab("uE4aLeJi", {
       slider: "uE4aLeJi",
-      width: document.documentElement.scrollWidth * 0.666,
-      hideHeaders: true,
-      position: "right",
-      medium: "snippet",
-    }),
-  }),
+      medium: "ContactProfile",
+      buttonText: "Contantame",
+      buttonColor: "#2979FF",
+      customIcon: `<i class="v-icon notranslate mdi mdi-message-text"></i>`,
+    });
+  },
 };
 </script>
 
 <style>
-@import "@typeform/embed/build/css/slider.css";
+@import "@typeform/embed/build/css/sidetab.css";
 </style>
