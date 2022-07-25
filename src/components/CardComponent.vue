@@ -1,5 +1,5 @@
 <template>
-  <v-row id="CardComponent" justify="center" class="mb-16">
+  <v-row id="CardComponent" justify="center" class="mb-8">
     <v-col class="text-center" cols="12">
       <v-card class="rounded-xl pt-0" elevation="20">
         <v-avatar class="mt-n16" color="primary" size="160">
@@ -18,7 +18,7 @@
         <redes-sociales-component />
         <v-card-text>
           <v-row justify="center">
-            <v-col cols="10" sm="9" md="6" xl="5" class="pb-8">
+            <v-col cols="10" sm="9" md="7" xl="5" class="pb-8">
               <v-divider class="mb-4" />
               <p class="text-body-1 font-weight-light text-start">
                 Hola, me llamo Pedro Mancilla, soy desarrollador web, conocí la

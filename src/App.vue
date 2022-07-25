@@ -54,3 +54,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+* {
+  word-break: break-word !important;
+}
+</style>
