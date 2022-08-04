@@ -1,11 +1,5 @@
 <template>
-      <v-alert
-      outlined
-      type="warning"
-      class="ma-0 text-center"
-    
-      v-text="`Pagina en construcción`"
-    />
+  <div></div>
 </template>
 
 <script>
@@ -25,6 +19,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import "@typeform/embed/build/css/sidetab.css";
 </style>

@@ -1,6 +1,12 @@
 <template>
   <v-app>
-    <contact-component />
+    <v-alert
+      outlined
+      type="warning"
+      class="ma-0 text-center"
+      v-text="`Pagina en construcción`"
+    />
+    <contact-component v-if="false" />
     <v-parallax
       dark
       src="@/assets/material.jpg"
